@@ -1,0 +1,10 @@
+version: "2.3"
+services:     
+  spring-boot-rest-docker-app:
+    image: springboot
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 8761:8080
+   
